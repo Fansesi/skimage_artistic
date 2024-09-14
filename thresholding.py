@@ -12,5 +12,5 @@ local_thresh = threshold_local(
 )  # play with the settings.
 
 binary_flower = img_gray > local_thresh
-
-compare(img, binary_flower, "Tresholded flower image")
+params = {}
+compare(img, binary_flower, title_processed="Tresholded flower image", **params)

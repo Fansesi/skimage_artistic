@@ -16,8 +16,8 @@ def show(image: np.ndarray, title="Image", cmap_type="gray", axis=False):
 
 def compare(
     original,
-    filtered,
-    title_filtered="Filtered",
+    processed,
+    title_processed="Processed",
     cmap_type="gray",
     axis=False,
     title_original="Original",
@@ -27,8 +27,8 @@ def compare(
     ax1.imshow(original, cmap=cmap_type)
     ax1.set_title(title_original)
 
-    ax2.imshow(filtered, cmap=cmap_type)
-    ax2.set_title(title_filtered)
+    ax2.imshow(processed, cmap=cmap_type)
+    ax2.set_title(title_processed)
 
     if not axis:
         ax1.axis("off")
